@@ -31,6 +31,7 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 * 浏览和讨论是否成正比，是否有水分
 * 演讲的人多数来是什么职业
 * 什么时候演讲比较多
+* TED演讲的评价分析
 
 ## 预计产出的最小可行性产品
 ### 产出包含数据可视化和总结可交互数据可视化html（基于flask渲染的html页面）
@@ -77,16 +78,20 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 * flask模块渲染页面
 * 参考一些代码做美化
 
-# [原型文档](https://lujiayan.github.io/Interactive-data-visualization/Axure/#g=1)
+# [原型文档](https://lujiayan.github.io/data-visualization/Axure/#g=1&p=%E9%A6%96%E9%A1%B5)
 
 ## 数据说明
 简述：本数据集包含了2017年9月21日之前上传到官方网站TED.com的所有TED Talks演讲录制信息。
+
 文件列表：
+
 * ted_main.csv: 包含演讲主要信息，包括演讲标题，发言人，演讲内容，观看次数，评论数量，演讲评分等。
 * transcripts.csv: 包含演讲链接和官方英文字幕。
 
 ### 数据来源
 数据内容源自于kaggle平台用户分享，基于Creative Commons License发布，具体信息内容源自TED官网。
+
+[flask参考](https://segmentfault.com/a/1190000017330435)
 
 ## TO LIST
 TED数据主题分析学习
