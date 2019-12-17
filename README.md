@@ -1,5 +1,5 @@
 # data-visualization
-# Interactive-data-visualization
+
 
 ## 项目介绍
 <table>
@@ -26,11 +26,11 @@
 TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，娱乐(entertainment)和设计(design)领域的专家聚集在一起的非盈利组织。Ted的口号是"Ideas worth spreading"，也就是“值得传播的思想”。每年2-3月，TED大会在北美召集众多领域的杰出人物，为他们提供了一个平台，将多年的工作和研究提炼为简短有力的演讲（通常少于18分钟），并上传到TED官网供观众免费收看。同时，独立运行的TEDx鼓励各地的TED粉丝自发组织TED风格的活动，在世界各地的社区分享想法。
 
 ## 数据集可探索、研究的方向
-浏览量最高的10个TED视频可视化分析
-讨论量最高的10个TED视频可视化分析
-浏览和讨论是否成正比，是否有水分
-演讲的人多数来是什么职业
-什么时候演讲比较多
+* 浏览量最高的10个TED视频可视化分析
+* 讨论量最高的10个TED视频可视化分析
+* 浏览和讨论是否成正比，是否有水分
+* 演讲的人多数来是什么职业
+* 什么时候演讲比较多
 
 ## 预计产出的最小可行性产品
 ### 产出包含数据可视化和总结可交互数据可视化html（基于flask渲染的html页面）
@@ -80,9 +80,8 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 # [原型文档](https://lujiayan.github.io/Interactive-data-visualization/Axure/#g=1)
 
 ## 数据说明
-### 简述：本数据集包含了2017年9月21日之前上传到官方网站TED.com的所有TED Talks演讲录制信息。
-### 文件列表
-### 该数据集包含两个文件：
+简述：本数据集包含了2017年9月21日之前上传到官方网站TED.com的所有TED Talks演讲录制信息。
+文件列表：
 * ted_main.csv: 包含演讲主要信息，包括演讲标题，发言人，演讲内容，观看次数，评论数量，演讲评分等。
 * transcripts.csv: 包含演讲链接和官方英文字幕。
 
