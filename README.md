@@ -77,7 +77,7 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 * flask模块渲染页面
 * 参考一些代码做美化
 
-# [原型文档](https://lujiayan.github.io/Interactive-data-visualization/Axure/#g=1)
+# [原型文档](https://lujiayan.github.io/data-visualization/Axure/#g=1&p=%E9%A6%96%E9%A1%B5)
 
 ## 数据说明
 简述：本数据集包含了2017年9月21日之前上传到官方网站TED.com的所有TED Talks演讲录制信息。
