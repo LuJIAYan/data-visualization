@@ -89,8 +89,10 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 * transcripts.csv: 包含演讲链接和官方英文字幕。
 
 ### 数据来源
-[数据内容](https://www.kaggle.com/rounakbanik/ted-data-analysis)源自于kaggle平台用户分享，基于Creative Commons License发布，具体信息内容源自TED官网。
+数据内容源自于kaggle平台用户分享，基于Creative Commons License发布，具体信息内容源自TED官网。
+
 [flask参考](https://segmentfault.com/a/1190000017330435)
+
 ## TO LIST
 TED数据主题分析学习
 
