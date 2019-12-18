@@ -54,7 +54,6 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 </table>
 	
 * 可视化部分
-
 <table>
     <tr>
 	     <td>各分类主题和浏览数量</td>
@@ -77,7 +76,7 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 
 
 ## 产品特色功能--可交互的数据可视化产品
-* pandas做数据清理和处理
+* [pandas做数据清理和处理](https://github.com/LuJIAYan/data-visualization/blob/master/data/tedtalk/ted_clean.ipynb)
 * plotly可视化
 * flask模块渲染页面
 * 参考一些代码做美化
