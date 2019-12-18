@@ -23,7 +23,11 @@
 </table>
 
 ## 背景介绍
-TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，娱乐(entertainment)和设计(design)领域的专家聚集在一起的非盈利组织。Ted的口号是"Ideas worth spreading"，也就是“值得传播的思想”。每年2-3月，TED大会在北美召集众多领域的杰出人物，为他们提供了一个平台，将多年的工作和研究提炼为简短有力的演讲（通常少于18分钟），并上传到TED官网供观众免费收看。同时，独立运行的TEDx鼓励各地的TED粉丝自发组织TED风格的活动，在世界各地的社区分享想法。
+TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，娱乐(entertainment)和设计(design)领域的专家聚集在一起的非盈利组织。Ted的口号是"Ideas worth spreading"，也就是“值得传播的思想”。本研究首先针对ted_main.csv数据集，该数据集包含了2017年9月21日之前上传到官方网站TED.com的所有TED Talks演讲录制信息。
+
+另一个数据集transcripts.csv包含了具体的演讲文本信息，我们稍晚一些时候再进行分析。
+
+首先，让我们简单看一下ted_main.csv数据集的概况，并对数据集进行初步调整，看看有什么值得探索的方向。
 
 ## 数据集可探索、研究的方向
 * 浏览量最高的10个TED视频可视化分析
