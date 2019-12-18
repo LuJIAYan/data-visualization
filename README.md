@@ -16,10 +16,9 @@
         <td><b><code>初稿</code></b></td>
     </tr>    
     <tr>
-        <td rowspan="6"><b>小组成员</b></td>
-        <td><a href="https://gitee.com/lujiayan">@卢佳燕</a></td>
-    </tr>
-   
+        <td rowspan="3"><b>小组成员</b></td>
+        <td><a href="https://gitee.com/lujiayan">@卢佳燕 @李虹霓  @黄嘉雯</a></td>
+	    
 </table>
 
 ## 背景介绍
@@ -51,6 +50,11 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
         <td>拖动的时间轴</td>
 		<td>不同时间演讲分类对应的评论数量</td>   
     </tr>
+    <tr>
+        <td>TED演讲top10视频</td>
+        <td>点击图片跳转至对应TED视频连接</td>
+	<td>top视频连接及对应图片封面</td>   
+    </tr>
 </table>
 	
 * 可视化部分
@@ -76,7 +80,7 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 
 
 ## 产品特色功能--可交互的数据可视化产品
-* [pandas做数据清理和处理](https://github.com/LuJIAYan/data-visualization/blob/master/data/tedtalk/ted_clean.ipynb)
+* [pandas做数据清理和处理](https://github.com/LuJIAYan/data-visualization/blob/master/data/tedtalk/picture.ipynb)
 * plotly可视化
 * flask模块渲染页面
 * 参考一些代码做美化
@@ -103,3 +107,4 @@ TED数据主题分析学习
 版本|日期 | 修改内容 | 涉及人员
 -|-|-|-
 V1.1|2019.12.15 | 展示PRD,招募人员| 卢佳燕
+V2|2019.12.18 | 数据清洗及部分可视化| 卢佳燕
