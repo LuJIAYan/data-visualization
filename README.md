@@ -17,7 +17,7 @@
     </tr>    
     <tr>
         <td rowspan="3"><b>小组成员</b></td>
-        <td><a href="https://gitee.com/lujiayan">@卢佳燕 @李虹霓  @黄嘉雯</a></td>
+        <td><a href="https://gitee.com/lujiayan">@卢佳燕</a> @李虹霓  @黄嘉雯</td>
 	    
 </table>
 
@@ -100,7 +100,7 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 
 [flask参考](https://segmentfault.com/a/1190000017330435)
 
-## TO LIST
+## TO do LIST
 TED数据主题分析学习
 
 ## <a>版本更替</a>
