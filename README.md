@@ -31,10 +31,11 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 ## 数据集可探索、研究的方向
 * 浏览量最高的10个TED视频可视化分析
 * 讨论量最高的10个TED视频可视化分析
-* 浏览和讨论是否成正比，是否有水分
+* 浏览和讨论是否成正比
 * 演讲的人多数来是什么职业
 * 什么时候演讲比较多
 * TED演讲的评价分析
+* 不同时间的观看数和评论数对比
 
 ## 预计产出的最小可行性产品
 ### 产出包含数据可视化和总结可交互数据可视化html（基于flask渲染的html页面）
@@ -68,6 +69,10 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 		 <td>相关关系图</td>
 	</tr>
 	<tr>
+		 <td>不同时间的评论和观看数</td>
+		 <td>交互折线图</td>
+	</tr>
+	<tr>
 		 <td>演讲者职业和演讲数量</td>
 		 <td>条形图</td>
 	</tr>
@@ -80,7 +85,7 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 
 
 ## 产品特色功能--可交互的数据可视化产品
-* [pandas做数据清理和处理](https://github.com/LuJIAYan/data-visualization/blob/master/data/tedtalk/picture.ipynb)
+* [pandas做数据清理和处理](https://github.com/LuJIAYan/data-visualization/blob/master/data/tedtalk/ted_clean2tu%20-%20%E5%B9%B4%E4%BB%BD.ipynb)
 * plotly可视化
 * flask模块渲染页面
 * 参考一些代码做美化
