@@ -89,7 +89,7 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 * [plotly可视化](https://github.com/LuJIAYan/data-visualization/tree/master/plotly%20html)
 * [flask模块渲染页面](https://github.com/LuJIAYan/data-visualization/tree/master/flask_final) 
 * [pythonanywhere](http://lhn.pythonanywhere.com/)交互图片需要点击“数据分析展示”下面链接内容
-* [pythonanywhere2]https://lujiayan.pythonanywhere.com/)加载有点慢，需要耐心等待
+* [pythonanywhere2](https://lujiayan.pythonanywhere.com/)表格数据有点多，加载有点慢，需要耐心等待
 * [dashipynb文件](https://github.com/LuJIAYan/data-visualization/tree/master/dash)
 
 * [参考一些代码做美化](https://www.runoob.com/bootstrap/bootstrap-tutorial.html)  (Bootstrap 表单、面板、折叠、图片排版等、网上css样式）
