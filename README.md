@@ -13,7 +13,7 @@
     </tr>
 	<tr>
         <td><b>完成情况</b></td>
-        <td><b><code>初稿</code></b></td>
+        <td><b><code>完成</code></b></td>
     </tr>    
     <tr>
         <td rowspan="3"><b>小组成员</b></td>
