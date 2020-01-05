@@ -44,15 +44,15 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
     <tr>
         <td>下拉选单联动可视化</td>
         <td>分类筛选</td>
-		<td>不用年份演讲浏览数量</td>   
+		<td>不同主题标签的浏览量对比</td>   
     </tr>
 	<tr>
-        <td>TED演讲时间分布</td>
-        <td>拖动的时间轴</td>
-		<td>不同时间演讲分类对应的评论数量</td>   
+        <td>可视化图关联表格处理</td>
+        <td>表单折叠</td>
+		<td>表格数据太长不美观问题</td>   
     </tr>
     <tr>
-        <td>TED演讲top10视频</td>
+        <td>TED演讲top5视频</td>
         <td>点击图片跳转至对应TED视频连接</td>
 	<td>top视频连接及对应图片封面</td>   
     </tr>
@@ -86,8 +86,10 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 
 ## 产品特色功能--可交互的数据可视化产品
 * [pandas做数据清理和处理](https://github.com/LuJIAYan/data-visualization/blob/master/data/tedtalk/ted_clean2tu%20-%20%E5%B9%B4%E4%BB%BD.ipynb)
-* plotly可视化
-* flask模块渲染页面
+* [plotly可视化](https://github.com/LuJIAYan/data-visualization/tree/master/plotly%20html)
+* [flask模块渲染页面](https://github.com/LuJIAYan/data-visualization/tree/master/flask_final) pythonanywhere部署努力中
+* [dashipynb文件](https://github.com/LuJIAYan/data-visualization/tree/master/dash)
+
 * 参考一些代码做美化
 
 # [原型文档](https://lujiayan.github.io/data-visualization/Axure/#g=1&p=%E9%A6%96%E9%A1%B5)
@@ -113,3 +115,6 @@ TED数据主题分析学习
 -|-|-|-
 V1.1|2019.12.15 | 展示PRD,招募人员| 卢佳燕
 V2|2019.12.18 | 数据清洗及部分可视化| 卢佳燕
+V3|2019.12.30 | dash、flask| 卢佳燕
+V4|2019.1.1 | 页面顶部标题图样式和交互处理| 李虹霓
+V5|2019.1.1 | 页面底部图片样式和交互处理| 黄嘉雯
