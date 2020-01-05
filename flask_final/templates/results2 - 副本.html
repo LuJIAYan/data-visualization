@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <!--    <link rel="stylesheet" type = "text/css" href="css/title.css" />-->
+    <link rel="stylesheet" href="static/hf.css" />
+
+    <title>TEDtalks insight</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--   
+  	<title>table模块快速使用</title>
+
+	<link href="${ctx}/front/css/layui/css/layui.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="${ctx}/front/js/libs/layui/layui.js"></script>
+		/>-->
+	<link rel = "stylesheet"type = "text/css"href="static/video_css.css"/>
+
+</head>
+<body>
+<p>
+  <!--  图片地址换了个位置，GitHub链接图片不稳定/>-->
+    <img src="https://img-blog.csdnimg.cn/20200103231535250.png" style="width:100%;height:auto;margin:0px auto"/> 
+</p>
+
+	<div class="panel panel-danger">
+	<div class="panel-heading">
+		<h3 class="panel-title">TED主题标签每年浏览量</h3>
+	</div>
+	<div class="panel-body">
+		通过下图看出每年TED的演讲不同话题的浏览量，间接地可以了解每年观众们对什么主题关注度比较高。以“culture”为例，2013年以前这个主题的TED演讲视频浏览量最高可达4千万，但是之后这个主题的关注度比较少了，那么那些主题视频是关注度比较高的呢？（下面会从评论数和浏览量维度进行分析）
+	</div>
+</div>
+
+	<form method="POST" action="/TED">
+    <select name="the_region_selected"">
+        {% for item in the_select_region %}
+            <option value="{{ item }}">{{ item }}</option>
+        {% endfor %}
+    </select>
+	<p><input value='Do it!' type='SUBMIT'></p>
+	</form>
+
+    <div class="panel-body">
+		{{ the_plot_all|safe }}
+	</div>
+
+	<table class="table">
+		{{ the_res|safe }}
+	</table>
+
+	<div class="panel-body">
+		{{ the_plot_all2|safe }}
+	</div>
+</div>
+
+
+<table class="layui-show" id="followTable" lay-filter="followTable" style="width: 80%"></table>
+
+ 
+<footer>
+	<div class="panel panel-danger">
+	<div class="panel-heading">
+		<h3 class="panel-title">TED热门演讲视频top5</h3>
+	</div>
+	<div style="white-space: nowrap"
+    <ul class="box">
+		<li><img src="static/1.png" width="300" height="auto" alt="" style="max-width: 100%;"></li>
+        	<a href="https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are"></a>
+
+		<li><img src="static/2.png" width="300" height="auto" alt="" style="max-width: 100%;"></li>
+        	<a href="https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action"></a>
+
+		<li><img src="static/3.png" width="300" height="auto" alt="" style="max-width: 100%;"</li>
+			<a href="https://www.ted.com/talks/brene_brown_on_vulnerability"></a>
+
+		<li><img src="static/4.png" width="300" height="auto" alt="" style="max-width: 100%;"></li>
+        	<a href="https://www.ted.com/talks/mary_roach_10_things_you_didn_t_know_about_orgasm"></a>
+
+    	<li><img src="static/5.png" width="300" height="auto" alt="" style="max-width: 100%;"></li>
+     		<a href="https://www.ted.com/talks/julian_treasure_how_to_speak_so_that_people_want_to_listen"></a>
+	</ul>
+	</div> 	
+</footer>
+
+
+</body>
+</html>

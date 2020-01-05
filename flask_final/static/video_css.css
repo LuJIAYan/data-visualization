@@ -1,0 +1,10 @@
+ul,li{ padding:0; margin:0; overflow:hidden;}
+li{ list-style:none;}
+img{ border:10px solid #000;
+	-moz-column-count:5;
+	-webkit-column-count:5;
+	column-count:5;}
+.box{ width:auto;}
+.box li{ float:left; margin-right:2px;}
+
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <!--   <link rel="stylesheet" type = "text/css" href="css/title.css" />-->
+    <link rel="stylesheet" href="static/hf.css" />
+    <!-- 引入 bootstrap 标题样式 -->
+    <title>TEDtalks insight</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<!-- 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+     <!--table折叠样式 -->   
+	<!-- 新 Bootstrap4 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- 底部样式 -->
+	<link rel = "stylesheet"type = "text/css"href="static/video_css.css"/>
+
+</head>
+
+
+<body>
+<p>
+  <!--  图片地址换了个位置，GitHub链接图片不稳定/>-->
+    <img src="https://img-blog.csdnimg.cn/20200103231535250.png" style="width:100%;height:auto;margin:0px auto"/> 
+</p>
+
+	<div class="panel panel-danger">
+	<div class="panel-heading">
+		<h2 class="panel-title">TED主题标签每年浏览量</h2>
+	</div>
+	<div class="panel-body">
+	<h3>
+		通过下图看出每年TED的演讲不同话题的浏览量，间接地可以了解每年观众们对什么主题关注度比较高。以“culture”为例，2013年以前这个主题的TED演讲视频浏览量最高可达4千万，但是之后这个主题的关注度比较少了，那么哪些主题视频关注度比较高的呢？（下面会从评论数和浏览量维度进行分析）
+	</h3>
+	</div>
+</div>
+
+	<form method="POST" action="/TED">
+    <select name="the_region_selected"">
+        {% for item in the_select_region %}
+            <option value="{{ item }}">{{ item }}</option>
+        {% endfor %}
+    </select>
+	<p><input value='Do it!' type='SUBMIT'></p>
+	</form>
+		{{ the_plot_all|safe }}
+
+
+	<div class="panel panel-danger">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" 
+				   href="#collapseThree">
+					点击我进行展开折叠表格
+				</a>
+			</h4>
+		</div>
+		<div id="collapseThree" class="panel-collapse collapse">
+			<div class="panel-body">
+				{{ the_res|safe }}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+   $(function () { $('#collapseThree').collapse({
+      toggle: false
+   })});
+   $(function () { $('#collapseThree').collapse('show')});
+   $(function () { $('#collapseThree').collapse('toggle')});
+   $(function () { $('#collapseThree').collapse('hide')});
+</script>   
+
+
+    <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h3 class="panel-title">TED演讲视频哪些主题比较多     </h3>
+    </div>
+    <div class="panel-body">
+    	<h3>
+     由做图可以看出，TED演讲谈论最多的领域是科技、科学、全球问题、文化、TEDx活动经验等问题。跟我刚刚凭直观看表的猜测有一定的误差，因此我们还是以数据来说话。其中最产出最多的视频是科技类，高达727个。top10分别为technology（727）、science（567）、global issues（501）、culture（486）TEDx （450）、design（418）、business（348）、entertainment（299）、health（236）innovation（229）
+     由右图可以看出，浏览量和评论数
+		</h3>
+    </div>
+    <div>
+		<p>
+    	<img src="static/picture/themes.png" width="1000" height="auto" alt="" style="max-width: 100%;">
+ 		</p>
+    </div>
+
+
+
+    <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h2 class="panel-title">浏览量与评论数的相关关系 </h2>
+    </div>
+    <div class="panel-body">
+    	<h3>
+ 	特地百度了下，观看数平均数：1.698297e+06=1698297，约170w，中位数112w；评论均值有191w，中位数有118w。
+	由此可以看出，数据量还是比较大的有一定可信度，但是观看数和评论数存在一定的差异，我们来探索一下他们的相关关系~
+	由右边图片，并根据相关系数矩阵我们可以看出二者的皮尔逊相关系数为0.53，具有显著相关性。
+		</h3>
+    </div>
+    <div>
+		<p>
+    	<img src="static/picture/miaoshu.png" width="650" height="auto" alt="" style="max-width: 100%;">
+    	<img src="static/picture/relationship.png" width="650" height="auto" alt="" style="max-width: 100%;">
+ 		</p>
+    </div>
+
+
+    <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h2 class="panel-title">演讲视频时间分析</h2>
+    </div>
+    <div class="panel-body">
+    	<h3>
+ 			由左边的图片可以看出，TED演讲的产出最多是二三月分，此前是六七月份，再而是十十一月份，有季节特点，春季产出最多，其次是暑寒假，符合人们的观看习惯。由右边可以看出，TED演讲的视频数量逐年上升；2008到2010年，视频数量急剧上升；2010年后稳定在250个左右；2012年达到顶峰又开始下降,又稳定在250个左右
+
+		</h3>
+    </div>
+    <div>
+		<p>
+    	<img src="static/picture/time.jpg" width="650" height="auto" alt="" style="max-width: 100%;">
+    	<img src="static/picture/years.png" width="650" height="auto" alt="" style="max-width: 100%;">
+ 		</p>
+    </div>
+
+ 
+<footer>
+	<div class="panel panel-danger">
+	<div class="panel-heading">
+		<h2 class="panel-title">TED热门演讲视频top5</h2>
+	</div>
+	<div style="white-space: nowrap"
+    <ul class="box">
+    
+		<li><img src="static/1.png" width="290" height="auto" alt="" style="max-width: 100%;"></li>
+        	<a href="https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are"></a>
+
+		<li><img src="static/2.png" width="290" height="auto" alt="" style="max-width: 100%;"></li>
+        	<a href="https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action"></a>
+
+		<li><img src="static/3.png" width="290" height="auto" alt="" style="max-width: 100%;"</li>
+			<a href="https://www.ted.com/talks/brene_brown_on_vulnerability"></a>
+
+		<li><img src="static/4.png" width="290" height="auto" alt="" style="max-width: 100%;"></li>
+        	<a href="https://www.ted.com/talks/mary_roach_10_things_you_didn_t_know_about_orgasm"></a>
+
+    	<li><img src="static/5.png" width="290" height="auto" alt="" style="max-width: 100%;"></li>
+     		<a href="https://www.ted.com/talks/julian_treasure_how_to_speak_so_that_people_want_to_listen"></a>
+	</ul>
+	</div>
+
+
+
+
+</footer>
+
+
+</body>
+</html>
+
