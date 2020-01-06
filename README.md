@@ -87,11 +87,10 @@ TED由Richard Saulman创立于1984年，是一家旨在将技术(technology)，�
 ## 产品特色功能--可交互的数据可视化产品
 * [pandas做数据清理和处理](https://github.com/LuJIAYan/data-visualization/blob/master/data/tedtalk/ted_clean2tu%20-%20%E5%B9%B4%E4%BB%BD.ipynb)
 * [plotly可视化](https://github.com/LuJIAYan/data-visualization/tree/master/plotly%20html)
+* [dashipynb文件](https://github.com/LuJIAYan/data-visualization/tree/master/dash)
 * [flask模块渲染页面](https://github.com/LuJIAYan/data-visualization/tree/master/flask_final) 
 * [pythonanywhere](http://lhn.pythonanywhere.com/)交互图片需要点击“数据分析展示”下面链接内容
 * [pythonanywhere2](https://lujiayan.pythonanywhere.com/)基于@李虹霓的版本加了故事描述
-* [dashipynb文件](https://github.com/LuJIAYan/data-visualization/tree/master/dash)
-
 * [参考一些代码做美化](https://www.runoob.com/bootstrap/bootstrap-tutorial.html)  (Bootstrap 表单、面板、折叠、图片排版等、网上css样式）
 
 # [原型文档](https://lujiayan.github.io/data-visualization/Axure/#g=1&p=%E9%A6%96%E9%A1%B5)
@@ -121,3 +120,4 @@ V3|2019.12.30 | dash、flask本地内容| 卢佳燕
 V4|2019.1.1 | 页面顶部标题图样式和交互处理| 李虹霓
 V5|2019.1.1 | 页面底部图片样式和交互处理| 黄嘉雯
 V6|2019.1.5 | Pythonanywhere部署| 李虹霓
+V6|2019.1.6 | Pythonanywhere部署基础上加文字描述和样式| 李虹霓
