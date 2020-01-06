@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Proudly presented by ECharts</title>
+    {% for jsfile_name in script_list %}
+        <script src="../static/{{ jsfile_name }}.js"></script>
+    {% endfor %}
+</head>
+
+<body>
+<div style="margin: auto;width: 70%">
+    <div>
+        <h3>每年各主题分类个数</h3>
+        <p>通过下图看出每年TED的演讲不同话题的浏览量，间接地可以了解每年观众们对什么主题关注度比较高。以“culture”为例，2013年以前这个主题的TED演讲视频浏览量最高可达4千万。其中最产出最多的视频是科技类，各年累计总个数高达727个。top10分别为technology（727）、science（567）、global issues（501）、culture（486）TEDx （450）、design（418）、business（348）、entertainment（299）、health（236）innovation（229）</p>
+    </div>
+    <form action="/" style="margin-left: 10px">
+        <button type="submit" style="float: left;margin-left: 10px">首页</button>
+    </form>
+
+    <form action="/123" style="margin-left: 10px;margin-top: 5px">
+ 
+        <select name="city">
+            {% for foo in select %}
+                <option value="{{ foo }}">{{ foo }}</option>
+            {% endfor %}
+
+        </select>
+        <button type="submit">选择</button>
+    </form>
+
+    <div style="clear: both"></div>
+
+</div>
+<div style="margin: auto;width: 70%">
+    {{ myechart|safe }}
+    <div style="size: 50px"><b>{% if text %}
+        选择数据的目的
+    {% endif %}</b></div>
+    <div style="float: left;width: 70%">
+        <p style="text-indent:2em">{{ text }}</p>
+    </div>
+    <div style="size: 50px;clear: both"><b>{% if text1 %}
+        发现的故事
+    {% endif %}</b></div>
+    <div style="float: left;width: 70%">
+        <p style="text-indent:2em">{{ text1 }}</p>
+    </div>
+    {% if a %}
+        <table border="1">
+            <tr>
+                <td colspan="11" style="text-align: center"> 全国平均工资</td>
+            </tr>
+            <tr>
+                <td></td>
+                {% for i in data_x %}
+                    <td style="width: 50px;text-align: center">{{ i }}</td>
+                {% endfor %}
+            </tr>
+            {% for foo in result %}
+                <tr>
+                    {% for i in foo %}
+                        <td style="width: 50px;text-align: center">{{ i }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+
+
+        </table>
+    {% endif %}
+</div>
+</body>
+
+</html>

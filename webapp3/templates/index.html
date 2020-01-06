@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Proudly presented by ECharts</title>
+    {% for jsfile_name in script_list %}
+        <script src="../static/{{ jsfile_name }}.js"></script>
+    {% endfor %}
+</head>
+
+<body>
+<div ></div>
+<div style="margin: auto;width: 70%">
+    <div>
+        <h3>视频浏览和评论</h3>
+    </div>
+    <form action="/" style="margin-left: 10px">
+        <button type="submit" style="float: left;margin-left: 10px">首页</button>
+    </form>
+
+    <form action="/bar1" style="margin-left: 10px;margin-top: 5px">
+        <button type="submit" style="float: left;margin-left: 10px">浏览量和评论数TOP10视频是</button>
+    </form>
+    <form action="/bar" style="margin-left: 10px;margin-top: 5px">
+        <button type="submit" style="float: left;margin-left: 10px">主讲人都来自什么职业</button>
+    </form>
+    <form action="/time" style="margin-left: 10px;margin-top: 5px">
+        <button type="submit" style="float: left;margin-left: 10px">每个时间段的评论和浏览量</button>
+    </form>
+    <form action="/Scatter" style="margin-left: 10px;margin-top: 5px">
+        <button type="submit" style="float: left;margin-left: 10px">浏览量和评论数的关系</button>
+    </form>
+
+    <div style="clear: both"></div>
+</div>
+<div style="margin: auto;width: 70%">
+    {{ myechart|safe }}
+    <div style="size: 50px"><b>{% if text %}
+        选择数据的目的
+    {% endif %}</b></div>
+    <div style="float: left;width: 70%">
+        <p style="text-indent:2em">{{ text }}</p>
+    </div>
+    <div style="size: 50px;clear: both"><b>{% if text1 %}
+        发现的故事
+    {% endif %}</b></div>
+    <div style="float: left;width: 70%">
+        <p style="text-indent:2em">{{ text1 }}</p>
+    </div>
+    {% if a %}
+        <table border="1">
+            <tr>
+                <td colspan="11" style="text-align: center"> 全国平均工资</td>
+            </tr>
+            <tr>
+                <td></td>
+                {% for i in data_x %}
+                    <td style="width: 50px;text-align: center">{{ i }}</td>
+                {% endfor %}
+            </tr>
+            {% for foo in result %}
+                <tr>
+                    {% for i in foo %}
+                        <td style="width: 50px;text-align: center">{{ i }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+
+
+        </table>
+    {% endif %}
+</div>
+</body>
+
+</html>
